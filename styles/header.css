@@ -1,0 +1,185 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(191, 191, 191);
+    border-bottom-style: solid;
+    z-index: 10;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.middle-section{
+    display: flex;
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 20px;
+    max-width: 500px;
+    align-items: center;
+}
+.right-section{
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.search-bar{
+    flex: 1;
+    height: 34px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(162, 162, 162);
+    box-shadow: inset 1px 2px 3px
+    rgba(0, 0, 0,0.15);
+}
+.search-bar::placeholder{
+    font-family: Roboto, arial;
+}
+.hamburger{
+    height: 25px;
+    margin-right: 32px;
+    margin-left: 20px;
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+.youtube-logo{
+    height: 35px;
+}
+.search-icon{
+    height: 30px;
+}
+.search-button{
+    height: 38px;
+    width: 65px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(162, 162, 162);
+    padding: 0;
+    margin-right: 10px;
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+    position: relative;
+}
+.search-button .tooltip,
+.voice-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: roboto, arial;
+    border-radius: 3px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip{
+    opacity: 1;
+}
+.search-button,
+.voice-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mic-icon{
+    padding: 0;
+    height: 28px;
+}
+.voice-button{
+    height: 39px;
+    width: 39px;
+    border-width: 0;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    padding: 0;
+}
+.voice-button:hover{
+    cursor: pointer;
+}
+.create-button{
+    height: 39px;
+    width: 39px;
+    margin-right: 8px;
+    padding: 0;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.create-icon{
+    height: 25px;
+    width: 36px;
+    padding-top: 2px;
+}
+.other-apps-button{
+    width: 39px;
+    height: 39px;
+    padding: 0;
+    border: 0;
+    margin-right: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+.other-apps-icon{
+    height: 35px;
+}
+.noti-button{
+    width: 39px;
+    height: 39px;
+    padding: 0;
+    border: 0;
+    margin-right: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+.noti-icon{
+    height: 35px;
+    width: 35px;
+}
+.notification-icon-container{
+    position: relative;
+    cursor: pointer;
+}
+.notification-count{
+    position: absolute;
+    top: 1px;
+    right: 8px;
+    background-color: red;
+    color: white;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 10px;
+    font-size: 11px;
+}
+.profile-pic{
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+}
+.profile-button{
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border: 0;
+    margin-right: 30px;
+    cursor: pointer;
+}
